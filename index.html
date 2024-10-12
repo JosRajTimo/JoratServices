@@ -1,87 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="JORAT Services is a leading technology solutions provider specializing in .NET development, AI chatbots, and innovative web services.">
-    <meta name="keywords" content="JORAT Services, technology solutions, .NET development, AI chatbot, web development, IT services">
-    <title>JORAT Services</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Header Section -->
-    <header>
-        <div class="container">
-            <h1>Welcome to JORAT Services</h1>
-            <p>Your trusted partner for cutting-edge technology solutions</p>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Our Services</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+ <head>
+  <title>
+   JORAT Services
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+        body {
+            font-family: 'poppins', sans-serif;
+        }
+        .product-card {
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .product-details {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .product-card:hover .product-details {
+            opacity: 1;
+        }
 
-    <!-- About Us Section -->
-    <section id="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>At JORAT Services, we specialize in offering innovative technology solutions tailored to meet your unique needs. With expertise in web development, AI solutions, and .NET technologies, we ensure your business stays ahead in the digital world.</p>
-            <p>Our goal is to help businesses grow and succeed by leveraging cutting-edge technologies, providing expert solutions in a collaborative and customer-focused manner.</p>
-        </div>
-    </section>
+        #pathName {
+        font-size: 60px !important;
+        font-weight: bold !important;
+        color:#2f1c6a;
+        }
+        .message-subtitle {
+            color: #2f1c6a;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 16px
+        }
 
-    <!-- Our Services Section -->
-    <section id="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="service">
-                <h3>.NET Development</h3>
-                <p>We offer expert .NET development services, ranging from ASP.NET MVC applications to .NET Core solutions that help businesses streamline processes and improve user experiences.</p>
-            </div>
-            <div class="service">
-                <h3>AI Chatbot Solutions</h3>
-                <p>Our advanced AI chatbot technology, powered by Wit.ai, delivers seamless interaction for websites, helping businesses automate customer support, job inquiries, and more.</p>
-            </div>
-            <div class="service">
-                <h3>Web Development</h3>
-                <p>We create robust, responsive, and user-friendly websites using HTML, CSS, JavaScript, and modern web technologies. From e-commerce to corporate sites, we have you covered.</p>
-            </div>
-        </div>
-    </section>
 
-    <!-- Contact Us Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>Get in touch with us to discuss your project needs or request a quote. Our team is ready to help you achieve your business goals with customized solutions.</p>
-            <form action="submit_form.php" method="POST">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
+  </style>
+ </head>
+ <body class="bg-gray-100">
+  <div class="bg-gray-800 py-6">
+   <div class="container mx-auto  text-left">
 
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
+    <div class="navbar">
+        <a class="text-white mx-2" href="#" id="homeLink">Home</a>
+        <a class="text-white mx-2" href="#" id="aboutLink">Contact</a>
+      </div>
+   </div>
+  </div>
+  <div id="homePage" class="container mx-auto mt-8 px-4">
+   <div class="flex flex-col md:flex-row items-center mb-8">
+    <div class="md:w-2/3 text-center md:text-left">
+        <h2 id="pathName">JORAT Services 
+            <span class="ml-2 bg-green-500 text-white text-sm font-semibold px-2 py-1 rounded">
+            Online
+           </span></h2>
+        <div class="message-subtitle">An Officially Registered with Indian Government Udhyog</div>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
+     <p class="text-lg text-gray-700 mb-4">
+      We are delighted to have you here at JORAT Services. Our goal is to provide simple yet effective digital products that make your online experience smoother and more enjoyable. Whether you are looking for a secure browser or a smart assistant, we’re here to help.
+     </p>
+    </div>
+    <div class="md:w-1/3 flex justify-center md:justify-end">
+        <img src="./images/logo.jpeg" style="
+        height: 15rem;
+        border-radius: 50%;
+        margin-left: 10rem;
+    ">
+    </div>
+   </div>
+   <h2 class="text-2xl font-bold text-gray-800 mb-4">
+    Products
+   </h2>
+   <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div class="bg-white p-6 rounded-lg shadow-lg product-card">
+     <div class="flex items-center mb-4">
+      <span class="text-xl font-bold text-gray-800">
+       Textiiee Ai
+      </span>
+      <span class="ml-2 bg-purple-600 text-white text-sm font-semibold px-2 py-1 rounded">
+       Offer 70%
+      </span>
+     </div>
+     <p class="text-gray-700 mb-4">
+      An intelligent virtual assistant designed to help businesses and individuals automate their workflows, respond to inquiries. it helps you save time, boost productivity, and enhance customer interactions seamlessly.
+     </p>
+     <a class="text-purple-600 font-semibold" href="#">
+      Available for Purchase
+     </a>
+     <div class="product-details">
+      <h3 class="text-2xl font-bold text-gray-800 mb-2">
+       Textiiee Ai
+      </h3>
+      <p class="text-gray-700 mb-4">
+       An intelligent virtual assistant designed to help businesses and individuals automate their workflows, respond to inquiries. It helps you save time, boost productivity, and enhance customer interactions seamlessly.
+      </p>
+      <a class="text-purple-600 font-semibold" href="#">
+       Available for Purchase
+      </a>
+     </div>
+    </div>
+    <div class="bg-white p-6 rounded-lg shadow-lg product-card">
+     <div class="flex items-center mb-4">
+      <span class="text-xl font-bold text-gray-800">
+       Textiiee the Mate
+      </span>
+      <span class="ml-2 bg-purple-600 text-white text-sm font-semibold px-2 py-1 rounded">
+       Offer 70%
+      </span>
+     </div>
+     <p class="text-gray-700 mb-4">
+      Your ultimate social media connector, integrating multiple messaging platforms seamlessly into one interface, perfect for businesses managing customer communications.
+     </p>
+     <a class="text-purple-600 font-semibold" href="#">
+      Available for Purchase
+     </a>
+     <div class="product-details">
+      <h3 class="text-2xl font-bold text-gray-800 mb-2">
+       Textiiee the Mate
+      </h3>
+      <!-- <img   class="mb-4" height="100" src="./Index_files/images/TextieeAi_logo.jpeg"  width="100"/> -->
+      <p class="text-gray-700 mb-4">
+       Your ultimate social media connector, integrating multiple messaging platforms seamlessly into one interface, perfect for businesses managing customer communications.
+      </p>
+      <a class="text-purple-600 font-semibold" href="#">
+       Available for Purchase
+      </a>
+     </div>
+    </div>
+    <div class="bg-white p-6 rounded-lg shadow-lg product-card">
+     <div class="flex items-center mb-4" style="height: auto;">
+      <span class="text-xl font-bold text-gray-800">
+       DarkLite the Browser
+      </span>
+      <span class="ml-2 bg-red-500 text-white text-sm font-semibold px-2 py-1 rounded">
+       Free
+      </span>
+     </div>
+     <p class="text-gray-700 mb-4">
+      DarkLite is a lightweight, high-speed browser for Android. With a simple, efficient interface, it ensures a fast and seamless browsing experience while protecting your personal information.
+     </p>
+     <a class="text-purple-600 font-semibold" href="#">
+      Available on PlayStore
+     </a>
 
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
 
-    <!-- Footer Section -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 JORAT Services. All rights reserved.</p>
-            <p>Follow us on:
-                <a href="#">Facebook</a> | 
-                <a href="#">Twitter</a> | 
-                <a href="#">LinkedIn</a>
+
+     <div class="product-details">
+      <h3 class="text-2xl font-bold text-gray-800 mb-2">
+       DarkLite the Browser
+      </h3>
+      <div class="flex">
+
+          <img alt="DarkLite the Browser Image" class="m-4 " src="./images/DL_logo.jpeg" width="100"/>
+          <p class="text-gray-700 mb-4">
+              DarkLite is a lightweight, high-speed browser for Android. With a simple, efficient interface, it ensures a fast and seamless browsing experience while protecting your personal information.
             </p>
         </div>
-    </footer>
-</body>
+      <a class="text-purple-600 font-semibold" href="#">
+       Available on PlayStore
+      </a>
+     </div>
+
+
+    </div>
+   </div>
+  </div>
+
+
+  <div id="aboutPage" class="container mx-auto mt-8 px-4">
+    <div class="flex">
+     <div class="w-1/2">
+        <p class="text-lg leading-relaxed">
+            Hi, I'm
+           </p>
+      <h1 class="text-6xl font-bold leading-tight " style="color: #2f1c6a;">
+        JOSEPH RAJAKUMARAN TIMOTHY  <p class="mt-4 text-2xl"> Founder of JORAT Services
+          </p>
+      </h1>
+     
+      <div class="mt-8">
+       <p class="text-lg leading-relaxed">
+        <span class="font-bold text-2xl">
+         A
+        </span>
+        Sole proprietorship registered under Udyog Aadhar. Our goal is to provide exceptional services and solutions to businesses and educational institutions.       </p>
+       <p class="mt-4 text-lg leading-relaxed">
+        With 10+ years of experience in finance and software engineering, I’ve built solutions that bridge technology and people—whether it's reducing costs or creating real-time communication apps. 
+        At JORAT Services, we empower youth, entrepreneurs, and educational institutions by delivering innovative technology with a personal touch, making it fun, impactful, and meaningful.</p>
+      </div>
+      <div class="mt-8">
+       <h2 class="text-lg font-bold">
+       Check Me
+       </h2>
+       <ul class="mt-2 space-y-2">
+        <li>
+         <a class="flex items-center text-gray-600 hover:text-black" href="https://in.linkedin.com/in/joseph-rajakumaran-timothy-47057317b">
+          <span>
+           LinkedIn
+          </span>
+          <i class="fas fa-arrow-right ml-2">
+          </i>
+         </a>
+        </li>
+ 
+       </ul>
+      </div>
+     </div>
+     <div class="w-1/2 flex justify-center items-center">
+      <img alt="" class="rounded-lg shadow-lg" height="400" src="./images/wa_qr.jpeg" width="400"/>
+     </div>
+    </div>
+  
+</div>
+<script>
+    $(document).ready(function() {
+
+      $("#aboutPage").hide();
+ 
+      $("#homeLink").click(function(e) {
+        e.preventDefault();
+        $("#aboutPage").fadeOut();  // Hide all divs
+        $("#homePage").fadeIn();      // Show home page with animation
+      });
+  
+      $("#aboutLink").click(function(e) {
+        e.preventDefault();
+        $("#homePage").fadeOut();
+        $("#aboutPage").fadeIn();
+      });
+    });
+  </script>
+
+ </body>
 </html>

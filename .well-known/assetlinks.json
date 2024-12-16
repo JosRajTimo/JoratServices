@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.joratservices.viewiiee",
+    "sha256_cert_fingerprints": ["1C:6D:C6:69:55:A3:F8:8B:70:1D:27:13:06:0B:67:6D:01:A0:A2:70:D8:A0:E0:DF:D2:11:25:B5:58:E3:2C:87"]
+  }
+}]

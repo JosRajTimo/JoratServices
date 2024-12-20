@@ -3,6 +3,6 @@
   "target": {
     "namespace": "android_app",
     "package_name": "com.joratservices.viewiiee",
-    "sha256_cert_fingerprints": ["1C:6D:C6:69:55:A3:F8:8B:70:1D:27:13:06:0B:67:6D:01:A0:A2:70:D8:A0:E0:DF:D2:11:25:B5:58:E3:2C:87"]
+    "sha256_cert_fingerprints": ["cd:91:a2:c0:0c:86:d1:20:6b:57:d7:c3:b9:4c:d5:b7:af:a7:7f:93:80:3a:18:63:08:15:0b:9c:13:21:55:53"]
   }
 }]

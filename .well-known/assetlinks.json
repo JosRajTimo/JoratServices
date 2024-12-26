@@ -1,8 +1,15 @@
-[{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "com.joratservices.viewiiee",
-    "sha256_cert_fingerprints": ["03:00:C7:EE:BD:B1:A4:4F:89:75:77:9F:A6:53:53:7A:7A:89:DB:92:3C:E8:21:C5:36:AE:D0:C4:CF:4A:C2:DC"]
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.joratservices.viewiiee",
+      "sha256_cert_fingerprints": [
+        "03:00:C7:EE:BD:B1:A4:4F:89:75:77:9F:A6:53:53:7A:7A:89:DB:92:3C:E8:21:C5:36:AE:D0:C4:CF:4A:C2:DC"
+      ]
+    }
   }
-}]
+]
